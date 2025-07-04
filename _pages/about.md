@@ -35,4 +35,4 @@ latest_posts:
 
 **Research:** I work at the intersection of probability, statistics, and geometry. I'm particularly interested in how the ambient geometry of a space affects statistical estimation and concentration phenomena.
 
-**Contact:** yassine.boukhateb@ensae.fr 
+**Email:** yassine[dot]boukhateb[at]ensae[dot]fr 
