@@ -194,6 +194,7 @@ exclude:
   - _posts
   - _projects
   - bibliography
+  - _pages/cv.md
   
 keep_files:
   - CNAME
