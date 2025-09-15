@@ -2,19 +2,19 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
- <strong>Ph.D.</strong> with <a href="https://vebrunel.fr">Victor-Emmanuel Brunel</a> and <a href="austinjstromme.github.io">Austin J. Stromme</a> @ <a href="https://crest.science/">CREST</a> - <a href="https://www.ensae.fr/">ENSAE</a>, <a href="https://www.ip-paris.fr/">Institut Polytechnique de Paris</a> <br>
+subtitle: >
+  <strong>Ph.D.</strong> with <a href="https://vebrunel.fr">Victor-Emmanuel Brunel</a> and
+  <a href="https://austinjstromme.github.io">Austin J. Stromme</a> @
+  <a href="https://crest.science/">CREST</a> -
+  <a href="https://www.ensae.fr/">ENSAE</a>,
+  <a href="https://www.ip-paris.fr/">Institut Polytechnique de Paris</a><br>
+
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # true pour un rendu arrondi (style photo de profil)
   more_info: >
-    <strong>Office :</strong> Room <br>
-    <strong>Address :</strong><br>
-    5 avenue Le Chatelier,<br>
-    91120 Palaiseau, France
-
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -35,4 +35,5 @@ latest_posts:
 
 **Research:** I work at the intersection of probability, statistics, and geometry. I'm particularly interested in how the ambient geometry of a space affects statistical estimation and concentration phenomena.
 
-**Email:** yassine[dot]boukhateb[at]ensae[dot]fr 
+**Email:** yassine [dot] boukhateb [at] ensae [dot] fr  
+**Address:** Office ?, ENSAE/CREST, 5 avenue Le Chatelier, 91120 Palaiseau, France
