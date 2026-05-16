@@ -16,11 +16,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "news-visiting-caidas-university-of-würzburg-germany-for-my-master-s-thesis",
-          title: 'Visiting CAIDAS, University of Würzburg, Germany, for my master’s thesis.',
+        },{id: "news-visited-caidas-university-of-würzburg-germany-for-my-master-s-thesis",
+          title: 'Visited CAIDAS, University of Würzburg, Germany, for my master’s thesis.',
           description: "",
-          section: "News",},{id: "news-attending-the-geometry-in-data-workshop-in-nantes-france",
-          title: 'Attending the Geometry in Data workshop in Nantes, France.',
+          section: "News",},{id: "news-attended-the-geometry-in-data-workshop-in-nantes-france",
+          title: 'Attended the Geometry in Data workshop in Nantes, France.',
+          description: "",
+          section: "News",},{id: "news-i-will-attend-the-annual-summer-school-on-mathematical-aspects-of-data-science-at-the-institute-for-mathematical-sciences-national-university-of-singapore-from-june-22-to-july-1-2026",
+          title: 'I will attend the Annual Summer School on Mathematical Aspects of Data Science...',
           description: "",
           section: "News",},{
       id: 'light-theme',
