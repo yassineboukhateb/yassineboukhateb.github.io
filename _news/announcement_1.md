@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Visiting [CAIDAS](https://www.caidas.uni-wuerzburg.de/), University of Würzburg, Germany, for my master's thesis.
+Visited [CAIDAS](https://www.caidas.uni-wuerzburg.de/), University of Würzburg, Germany, for my master's thesis.

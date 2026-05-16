@@ -13,6 +13,7 @@ subtitle: >
 profile:
   align: right
   image: prof_pic.jpg
+  image_alt: Portrait of Yassine Boukhateb
   image_circular: false # true pour un rendu arrondi (style photo de profil)
   more_info: >
 

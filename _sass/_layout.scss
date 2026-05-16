@@ -38,6 +38,30 @@ body.sticky-bottom-footer {
   }
 }
 
+.about-content {
+  text-align: left;
+}
+
+.news {
+  .news-section-row th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  table tr:first-child.news-section-row th {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    text-align: justify;
+  }
+}
+
 // TODO: redefine content layout.
 
 /******************************************************************************

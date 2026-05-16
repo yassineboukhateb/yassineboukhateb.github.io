@@ -8,13 +8,27 @@
       {% endif %}
     >
       <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
+        {% assign news = site.news | sort: 'date' | reverse %}
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
           {% assign news_limit = news_size %}
         {% endif %}
+        {% assign now_timestamp = site.time | date: '%s' | plus: 0 %}
+        {% assign current_news_section = '' %}
         {% for item in news limit: news_limit %}
+          {% assign item_timestamp = item.date | date: '%s' | plus: 0 %}
+          {% if item_timestamp >= now_timestamp %}
+            {% assign news_section = 'upcoming news' %}
+          {% else %}
+            {% assign news_section = 'past news' %}
+          {% endif %}
+          {% if news_section != current_news_section %}
+            {% assign current_news_section = news_section %}
+            <tr class="news-section-row">
+              <th scope="colgroup" colspan="2">{{ current_news_section }}</th>
+            </tr>
+          {% endif %}
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>

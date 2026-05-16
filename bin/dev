@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+RUBY_VERSION="${RUBY_VERSION:-3.3.11}"
+LOCAL_RUBY="${LOCAL_RUBY:-$HOME/.rubies/ruby-$RUBY_VERSION}"
+
+if [[ ! -x "$LOCAL_RUBY/bin/ruby" ]]; then
+  echo "Ruby $RUBY_VERSION was not found at $LOCAL_RUBY."
+  echo "Install libyaml first, then Ruby with:"
+  echo "  curl -fL https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz -o /tmp/yaml-0.2.5.tar.gz"
+  echo "  tar -xzf /tmp/yaml-0.2.5.tar.gz -C /tmp"
+  echo "  cd /tmp/yaml-0.2.5 && ./configure --prefix=\$HOME/.rubies/libyaml-0.2.5 && make && make install"
+  echo "  git clone --depth 1 https://github.com/rbenv/ruby-build.git /tmp/ruby-build"
+  echo "  RUBY_CONFIGURE_OPTS=\"--disable-install-doc --with-libyaml-dir=\$HOME/.rubies/libyaml-0.2.5\" /tmp/ruby-build/bin/ruby-build $RUBY_VERSION $LOCAL_RUBY"
+  exit 1
+fi
+
+export PATH="$LOCAL_RUBY/bin:$PATH"
+
+cd "$ROOT"
+bundle config set path vendor/bundle
+bundle install
+bundle exec jekyll serve --livereload --host 127.0.0.1 --port "${PORT:-4000}"
