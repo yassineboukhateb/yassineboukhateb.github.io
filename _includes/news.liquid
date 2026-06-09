@@ -18,7 +18,12 @@
         {% assign current_news_section = '' %}
         {% for item in news limit: news_limit %}
           {% assign item_timestamp = item.date | date: '%s' | plus: 0 %}
-          {% if item_timestamp >= now_timestamp %}
+          {% if item.end_date %}
+            {% assign item_end_timestamp = item.end_date | date: '%s' | plus: 0 %}
+          {% else %}
+            {% assign item_end_timestamp = item_timestamp %}
+          {% endif %}
+          {% if item_end_timestamp >= now_timestamp %}
             {% assign news_section = 'upcoming news' %}
           {% else %}
             {% assign news_section = 'past news' %}

@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+arabic_name: "ياسين بوخاطب"
 subtitle: >
   <strong>Ph.D.</strong> with <a href="https://vebrunel.fr">Victor-Emmanuel Brunel</a> and
   <a href="https://austinjstromme.github.io">Austin J. Stromme</a> @
