@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-I will attend [Functional inequalities and applications](https://conferences.cirm-math.fr/3593.html), an États de la recherche SMF meeting at CIRM, Marseille, from November 16 to 20, 2026.
+I will attend [Functional inequalities and applications](https://conferences.cirm-math.fr/3593.html) research school at CIRM, Marseille, from November 16 to 20, 2026.
