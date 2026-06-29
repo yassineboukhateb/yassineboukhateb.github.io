@@ -1,0 +1,65 @@
+- title: Mathematical methods and human thought in the age of AI
+  slug: klowden-tao
+  authors: Tanya Klowden and Terence Tao
+  year: 2026
+  publication: Preprint, arXiv:2603.26524
+  url: https://arxiv.org/abs/2603.26524
+  pdf: https://arxiv.org/pdf/2603.26524
+  take: >-
+    Use AI if it helps; Tao does too (argument from authority, yes). But keep
+    taste and exposition on your side: check the mathematics, and make the idea
+    visible.
+  quote: >-
+    [I]t not just shows that [...] but provides a causal narrative for how that
+    entailment was possible.
+  quote_source: Klowden & Tao, §4.2, p. 8
+  quote_url: https://arxiv.org/pdf/2603.26524#page=8
+
+- title: Correctness, Artificial Intelligence, and the Epistemic Value of Mathematical Proof
+  slug: weatherall-wolfson
+  authors: James Owen Weatherall and Jesse Wolfson
+  year: 2026
+  publication: Forthcoming in the Journal for the Philosophy of Mathematics
+  url: https://arxiv.org/abs/2602.12463
+  pdf: https://arxiv.org/pdf/2602.12463
+  note: >-
+    Good for separating correctness from what a proof actually teaches us.
+  quote: >-
+    That a mathematical proof be correct is neither sufficient nor necessary
+    for it to have epistemic value.
+  quote_source: Weatherall & Wolfson, §1, p. 1
+  quote_url: https://arxiv.org/pdf/2602.12463#page=1
+
+- title: Varieties of mathematical understanding
+  slug: avigad
+  authors: Jeremy Avigad
+  year: 2022
+  publication: Bulletin of the American Mathematical Society 59(1), 99–117
+  publication_url: https://doi.org/10.1090/S0273-0979-2021-01726-5
+  url: https://arxiv.org/abs/2310.20100
+  pdf: https://arxiv.org/pdf/2310.20100
+  note: >-
+    Avigad is a good reminder that understanding is not a vague bonus after the
+    proof, but part of what a proof is supposed to give.
+  quote: >-
+    It is common to say that the goal of mathematics is to obtain a conceptual
+    understanding of mathematical phenomena, and a deep understanding at that.
+  quote_source: Avigad, §3 · arXiv p. 5 / published p. 103
+  quote_url: https://arxiv.org/pdf/2310.20100#page=5
+
+- title: On proof and progress in mathematics
+  slug: thurston
+  authors: William P. Thurston
+  year: 1994
+  publication: Bulletin of the American Mathematical Society 30(2), 161–177
+  publication_url: https://doi.org/10.1090/S0273-0979-1994-00502-6
+  url: https://arxiv.org/abs/math/9404236
+  pdf: https://arxiv.org/pdf/math/9404236
+  note: >-
+    A very old paper, in the best sense, arguing that mathematics is above all
+    good communication.
+  quote: >-
+    The measure of our success is whether what we do enables people to
+    understand and think more clearly and effectively about mathematics.
+  quote_source: Thurston, §1 · arXiv p. 3 / published p. 163
+  quote_url: https://arxiv.org/pdf/math/9404236#page=3

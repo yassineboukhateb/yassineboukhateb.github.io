@@ -1,0 +1,58 @@
+{% if include.compact %}
+  <div class="reading-preview">
+    <p>
+      Four texts around AI, proof, understanding, and what may change in
+      mathematical work.
+    </p>
+    <ul class="reading-preview-list">
+      {% for item in site.data.reading %}
+        <li>
+          <a href="{{ '/reading/' | append: '#' | append: item.slug | relative_url }}">{{ item.title }}</a>
+          <span>{{ item.authors }} &middot; {{ item.year }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <a class="reading-more" href="{{ '/reading/' | relative_url }}">
+      browse the reading notes <i class="ti ti-arrow-right" aria-hidden="true"></i>
+    </a>
+  </div>
+{% else %}
+  <div class="recommended-reading">
+    {% for item in site.data.reading %}
+      <article class="reading-item" id="{{ item.slug }}">
+        <h2>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </h2>
+        <p class="reading-meta">{{ item.authors }} &middot; {{ item.year }}</p>
+        {% if item.publication %}
+          <p class="reading-publication">
+            {% if item.publication_url %}
+              <a href="{{ item.publication_url }}">{{ item.publication }}</a>
+            {% else %}
+              {{ item.publication }}
+            {% endif %}
+          </p>
+        {% endif %}
+        {% if item.note %}
+          <p class="reading-note">{{ item.note }}</p>
+        {% endif %}
+        {% if item.take %}
+          <p class="reading-take">{{ item.take }}</p>
+        {% endif %}
+        {% if item.quote %}
+          <figure class="reading-quote">
+            <blockquote>&ldquo;{{ item.quote }}&rdquo;</blockquote>
+            <figcaption>
+              &mdash; <a href="{{ item.quote_url }}">{{ item.quote_source }}</a>
+            </figcaption>
+          </figure>
+        {% endif %}
+        <p class="reading-links">
+          <a href="{{ item.url }}">abstract</a>
+          <span aria-hidden="true">/</span>
+          <a href="{{ item.pdf }}">PDF</a>
+        </p>
+      </article>
+    {% endfor %}
+  </div>
+{% endif %}

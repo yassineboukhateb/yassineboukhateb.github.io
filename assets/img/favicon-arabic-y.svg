@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Arabic letter yeh">
+  <rect width="512" height="512" rx="96" fill="#1f6f4a"/>
+  <text
+    x="256"
+    y="205"
+    fill="#f4fff8"
+    direction="rtl"
+    dominant-baseline="middle"
+    font-family="Amiri, 'Noto Naskh Arabic', 'Scheherazade New', serif"
+    font-size="330"
+    font-weight="700"
+    text-anchor="middle">ي</text>
+</svg>
