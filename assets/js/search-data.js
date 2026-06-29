@@ -16,6 +16,20 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-phd-seminar",
+          title: "phd seminar",
+          description: "CREST Statistics PhD Seminar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/phd-seminar/";
+          },
+        },{id: "nav-reading",
+          title: "reading",
+          description: "AI, proof, and how mathematical work is changing",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/reading/";
+          },
         },{id: "news-visited-caidas-university-of-würzburg-germany-for-my-master-s-thesis",
           title: 'Visited CAIDAS, University of Würzburg, Germany, for my master’s thesis.',
           description: "",
@@ -27,6 +41,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-will-attend-the-annual-summer-school-on-mathematical-aspects-of-data-science-at-the-institute-for-mathematical-sciences-national-university-of-singapore-from-june-22-to-july-1-2026",
           title: 'I will attend the Annual Summer School on Mathematical Aspects of Data Science...',
+          description: "",
+          section: "News",},{id: "news-i-will-attend-functional-inequalities-and-applications-an-états-de-la-recherche-smf-meeting-at-cirm-marseille-from-november-16-to-20-2026",
+          title: 'I will attend Functional inequalities and applications, an États de la recherche SMF...',
           description: "",
           section: "News",},{
       id: 'light-theme',
