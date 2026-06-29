@@ -42,8 +42,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-will-attend-the-annual-summer-school-on-mathematical-aspects-of-data-science-at-the-institute-for-mathematical-sciences-national-university-of-singapore-from-june-22-to-july-1-2026",
           title: 'I will attend the Annual Summer School on Mathematical Aspects of Data Science...',
           description: "",
-          section: "News",},{id: "news-i-will-attend-functional-inequalities-and-applications-an-états-de-la-recherche-smf-meeting-at-cirm-marseille-from-november-16-to-20-2026",
-          title: 'I will attend Functional inequalities and applications, an États de la recherche SMF...',
+          section: "News",},{id: "news-i-will-attend-functional-inequalities-and-applications-research-school-at-cirm-marseille-from-november-16-to-20-2026",
+          title: 'I will attend Functional inequalities and applications research school at CIRM, Marseille, from...',
           description: "",
           section: "News",},{
       id: 'light-theme',
