@@ -17,7 +17,7 @@ Below are the courses I am currently teaching, or I taught, in reverse chronolog
 
 **Tutorial sessions**
 
-- **Probability Theory**.
+- **Probability Theory** — graduate course.
 
 ---
 
