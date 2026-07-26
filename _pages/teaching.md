@@ -13,13 +13,25 @@ Below are the courses I am currently teaching, or I taught, in reverse chronolog
 
 ---
 
+### Spring 2027
+
+**Probability Theory** — first-year undergraduate course
+
+Role: tutorial sessions (**28.5 hours**).
+
+---
+
 ### Fall 2026
 
-**Differential and Integral Calculus** — undergraduate course
+**Accelerated Differential and Integral Calculus** — undergraduate course
 
-Role: lectures (**9 hours**) and tutorial sessions.
+Role: lectures (**9 hours**) and tutorial sessions (**12 hours**).
 
 Materials: lecture notes coming soon.
+
+**Probability 2AD** — undergraduate course
+
+Role: tutorial sessions (**9 hours**).
 
 ---
 
