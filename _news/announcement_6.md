@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-I will attend [Mathematical statistics in the age of generative AI](https://conferences.cirm-math.fr/3676.html) at CIRM, Marseille, from December 14 to 18, 2026.
+I will attend the [Mathematical statistics in the age of generative AI](https://conferences.cirm-math.fr/3676.html) conference at CIRM, Marseille, from December 14 to 18, 2026.
