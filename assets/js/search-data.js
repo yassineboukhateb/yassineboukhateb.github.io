@@ -45,6 +45,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-will-attend-functional-inequalities-and-applications-research-school-at-cirm-marseille-from-november-16-to-20-2026",
           title: 'I will attend Functional inequalities and applications research school at CIRM, Marseille, from...',
           description: "",
+          section: "News",},{id: "news-i-will-attend-mathematical-statistics-in-the-age-of-generative-ai-at-cirm-marseille-from-december-14-to-18-2026",
+          title: 'I will attend Mathematical statistics in the age of generative AI at CIRM,...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
