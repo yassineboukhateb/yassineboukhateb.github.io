@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-arabic_name: "ياسين بوخاطب"
 subtitle: >
   <strong>Ph.D. student in statistics</strong> at
   <a href="https://crest.science/">CREST</a> -
