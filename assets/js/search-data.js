@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-teaching",
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Preprints",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-teaching",
           title: "teaching",
           description: "",
           section: "Navigation",
@@ -41,6 +48,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-attended-the-annual-summer-school-on-mathematical-aspects-of-data-science-at-the-institute-for-mathematical-sciences-national-university-of-singapore-from-june-22-to-july-1-2026",
           title: 'I attended the Annual Summer School on Mathematical Aspects of Data Science at...',
+          description: "",
+          section: "News",},{id: "news-our-preprint-geometry-and-barycenters-in-large-cat-κ-spaces-with-victor-emmanuel-brunel-and-austin-j-stromme-is-now-available-on-arxiv",
+          title: 'Our preprint Geometry and barycenters in large CAT(κ) spaces, with Victor-Emmanuel Brunel and...',
           description: "",
           section: "News",},{id: "news-i-will-attend-the-functional-inequalities-and-applications-research-school-at-cirm-marseille-from-november-16-to-20-2026",
           title: 'I will attend the Functional inequalities and applications research school at CIRM, Marseille,...',
