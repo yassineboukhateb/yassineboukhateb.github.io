@@ -4,11 +4,10 @@ title: about
 permalink: /
 arabic_name: "ياسين بوخاطب"
 subtitle: >
-  <strong>Ph.D.</strong> with <a href="https://vebrunel.fr">Victor-Emmanuel Brunel</a> and
-  <a href="https://austinjstromme.github.io">Austin J. Stromme</a> @
+  <strong>Ph.D. student in statistics</strong> at
   <a href="https://crest.science/">CREST</a> -
   <a href="https://www.ensae.fr/">ENSAE</a>,
-  <a href="https://www.ip-paris.fr/">Institut Polytechnique de Paris</a><br>
+  <a href="https://www.ip-paris.fr/">Institut Polytechnique de Paris</a>
 
 
 profile:
@@ -23,7 +22,7 @@ social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
@@ -32,10 +31,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Education:** I am a Ph.D. student in mathematics working with [Victor-Emmanuel Brunel](https://vebrunel.fr) and [Austin J. Stromme](https://austinjstromme.github.io). Prior to that, I completed a master's degree in [probability and statistics](https://www.imo.universite-paris-saclay.fr/fr/etudiants/masters/mathematiques-et-applications/m2/mathematiques-de-laleatoire/) at [Institut des Mathématiques d'Orsay](https://www.imo.universite-paris-saclay.fr/fr/), Université Paris-Saclay. During my master's thesis, I worked with [Damien Garreau](https://sites.google.com/view/damien-garreau/home) ([JMU Würzburg](https://www.uni-wuerzburg.de/)) and [Eddie Aamari](https://www.math.ens.psl.eu/~eaamari/)  ([ENS Paris](https://www.math.ens.psl.eu/)) at [CAIDAS](https://www.caidas.uni-wuerzburg.de/) in Würzburg, Germany.
+**Research:** I work with [Victor-Emmanuel Brunel](https://vebrunel.wordpress.com/) and [Austin J. Stromme](https://austinjstromme.github.io) on statistical estimation in metric spaces. I am particularly interested in barycenters and concentration inequalities.
 
-
-**Research:** I work at the intersection of probability, statistics, and geometry. I'm particularly interested in how the ambient geometry of a space affects statistical estimation and concentration phenomena.
+**Background:** I completed a master's degree in [probability and statistics](https://www.imo.universite-paris-saclay.fr/fr/etudiants/masters/mathematiques-et-applications/m2/mathematiques-de-laleatoire/) at [Institut des Mathématiques d'Orsay](https://www.imo.universite-paris-saclay.fr/fr/), Université Paris-Saclay, after studying at ENSAE. For my master's thesis, I studied UMAP with [Damien Garreau](https://sites.google.com/view/damien-garreau/home) ([JMU Würzburg](https://www.uni-wuerzburg.de/)) and [Eddie Aamari](https://www.math.ens.psl.eu/~eaamari/) ([ENS Paris](https://www.math.ens.psl.eu/)) at [CAIDAS](https://www.caidas.uni-wuerzburg.de/) in Würzburg, Germany.
 
 **Seminar:** I am co-organizer of the [CREST Statistics PhD Seminar](https://crest-statistics-phd-seminar.github.io) at ENSAE.
 

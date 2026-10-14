@@ -186,7 +186,6 @@ exclude:
   - vendor
   - _pages/repositories.md
   - _pages/blog.md
-  - _pages/publications.md
   - _pages/projects.md
   - _pages/dropdown.md
   - _pages/profiles.md
@@ -269,14 +268,14 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Boukhateb]
+  first_name: [Yassine, Y.]
 
   style: apa
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: preprints.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
@@ -333,7 +332,7 @@ max_author_limit: 3 # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
-enable_publication_thumbnails: true
+enable_publication_thumbnails: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes

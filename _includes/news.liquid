@@ -9,6 +9,9 @@
     >
       <table class="table table-sm table-borderless">
         {% assign news = site.news | sort: 'date' | reverse %}
+        {% assign current_news = news | where: 'current', true %}
+        {% assign dated_news = news | where_exp: 'item', 'item.current != true' %}
+        {% assign news = current_news | concat: dated_news %}
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
@@ -23,16 +26,20 @@
           {% else %}
             {% assign item_end_timestamp = item_timestamp %}
           {% endif %}
-          {% if item_end_timestamp >= now_timestamp %}
+          {% if item.current %}
+            {% assign news_section = '' %}
+          {% elsif item_end_timestamp >= now_timestamp %}
             {% assign news_section = 'upcoming news' %}
           {% else %}
             {% assign news_section = 'past news' %}
           {% endif %}
           {% if news_section != current_news_section %}
             {% assign current_news_section = news_section %}
-            <tr class="news-section-row">
-              <th scope="colgroup" colspan="2">{{ current_news_section }}</th>
-            </tr>
+            {% if news_section != '' %}
+              <tr class="news-section-row">
+                <th scope="colgroup" colspan="2">{{ current_news_section }}</th>
+              </tr>
+            {% endif %}
           {% endif %}
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>

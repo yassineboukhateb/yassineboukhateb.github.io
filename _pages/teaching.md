@@ -9,7 +9,6 @@ nav_order: 2
 
 I teach mathematics at **ENSAE – Institut Polytechnique de Paris**, both in lecture courses and tutorial sessions.
 Tutorial groups usually have about **25 students**.
-Below are the courses I am currently teaching, or I taught, in reverse chronological order:
 
 ---
 
@@ -17,7 +16,7 @@ Below are the courses I am currently teaching, or I taught, in reverse chronolog
 
 **Tutorial sessions**
 
-- **Probability Theory** — graduate course.
+- **Probability Theory** — undergraduate course.
 
 ---
 
