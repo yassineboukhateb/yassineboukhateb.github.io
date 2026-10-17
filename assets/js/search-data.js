@@ -59,6 +59,13 @@ ninja.data = [{
           title: 'I will attend the Mathematical statistics in the age of generative AI conference...',
           description: "",
           section: "News",},{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=qpI032IAAAAJ", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
