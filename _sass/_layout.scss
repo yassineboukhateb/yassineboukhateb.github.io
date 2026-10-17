@@ -32,6 +32,44 @@ body.sticky-bottom-footer {
 }
 
 // Profile
+.about-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+  margin-bottom: 0.5rem;
+
+  .post-title {
+    margin-bottom: 0;
+  }
+
+  .social .contact-icons {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.45rem;
+    line-height: 1;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      min-height: 32px;
+
+      &:focus-visible {
+        outline: 2px solid var(--global-theme-color);
+        outline-offset: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .about-heading .post-title {
+    font-size: 1.8rem;
+  }
+}
+
 .profile {
   img {
     width: 100%;
