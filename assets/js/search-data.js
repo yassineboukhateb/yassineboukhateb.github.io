@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/phd-seminar/";
           },
-        },{id: "nav-reading",
-          title: "reading",
-          description: "AI, proof, and how mathematical work is changing",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/reading/";
-          },
         },{id: "news-visited-caidas-university-of-würzburg-germany-for-my-master-s-thesis",
           title: 'Visited CAIDAS, University of Würzburg, Germany, for my master’s thesis.',
           description: "",
