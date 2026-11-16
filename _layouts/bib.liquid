@@ -46,7 +46,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -371,6 +371,31 @@
       <div id="{{ entry.key }}-video" class="abstract hidden" hidden>
         <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
       </div>
+    {% endif %}
+
+    {% if entry.illustration %}
+      <figure class="publication-illustration">
+        <figcaption>
+          <span class="illustration-credit">Maths by humans, pixels by ChatGPT &#128578;</span>
+        </figcaption>
+        {% assign illustration_path = entry.illustration | prepend: '/assets/illustrations/' %}
+        {% assign illustration_directory = illustration_path | split: '/' | pop | join: '/' %}
+        <picture>
+          <source
+            media="(prefers-reduced-motion: reduce)"
+            srcset="{{ illustration_directory | append: '/poster.png' | relative_url }}"
+          >
+          <source srcset="{{ illustration_path | append: '.webp' | relative_url }}" type="image/webp">
+          <img
+            src="{{ illustration_path | append: '.gif' | relative_url }}"
+            alt="An iterated barycenter on the sphere and its distance to the true barycenter as observations accumulate"
+            width="900"
+            height="417"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+      </figure>
     {% endif %}
   </div>
 </div>

@@ -1021,10 +1021,14 @@ footer.sticky-bottom {
           border: 1px solid var(--global-divider-color);
           border-radius: 3px;
           font-size: 0.85rem;
-          min-height: 32px;
+          min-height: 36px;
           padding: 0.3rem 0.75rem;
           margin: 0;
           text-transform: none;
+
+          @media (max-width: 767px) {
+            min-height: 40px;
+          }
 
           &:hover,
           &:focus-visible {

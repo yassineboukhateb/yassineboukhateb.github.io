@@ -10,17 +10,24 @@ nav_order: 2
 I teach mathematics at **ENSAE – Institut Polytechnique de Paris**, both in lecture courses and tutorial sessions.
 Tutorial groups usually have about **25 students**.
 
----
+<section class="teaching-term" markdown="1">
 
-### Spring 2027
+## Spring 2027
+
+<div class="teaching-content" markdown="1">
 
 **Tutorial sessions**
 
 - **Probability Theory** — undergraduate course.
 
----
+</div>
+</section>
 
-### Fall 2026
+<section class="teaching-term" markdown="1">
+
+## Fall 2026
+
+<div class="teaching-content" markdown="1">
 
 **Lectures and tutorial sessions**
 
@@ -32,12 +39,20 @@ Tutorial groups usually have about **25 students**.
 
 - **Accelerated Probability** — graduate course.
 
----
+</div>
+</section>
 
-### Fall 2025
+<section class="teaching-term" markdown="1">
+
+## Fall 2025
+
+<div class="teaching-content" markdown="1">
 
 **Tutorial sessions**
 
 - **Functional and Convex Analysis** (Prof. [L. Decreusefond](https://perso.telecom-paristech.fr/decreuse/)) — undergraduate course.
 - **Stochastic Processes** (Prof. [N. Chopin](https://nchopin.github.io/)) — graduate course.
 - **Statistics** (Prof. [A. Dalalyan](https://adalalyan.github.io)) — graduate course.
+
+</div>
+</section>

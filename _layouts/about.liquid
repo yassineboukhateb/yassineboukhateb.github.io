@@ -1,61 +1,61 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <div class="about-heading">
-      <h1 class="post-title{% if page.arabic_name %} bilingual-name{% endif %}">
-        <span class="latin-name">
-          {% if site.title == 'blank' %}
-            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-            {{ site.last_name }}
-          {% else %}
-            {{ site.title }}
-          {% endif %}
-        </span>
-        {% if page.arabic_name %}
-          <span class="name-divider" aria-hidden="true"></span>
-          <span class="arabic-name" lang="ar" dir="rtl">{{ page.arabic_name }}</span>
-        {% endif %}
-      </h1>
-      {% if page.social %}
-        <div class="social">
-          <div class="contact-icons">{% include social.liquid %}</div>
-        </div>
-      {% endif %}
-    </div>
-    <p class="desc">{{ page.subtitle }}</p>
-    {% if page.social and site.contact_note != blank %}
-      <div class="social"><div class="contact-note">{{ site.contact_note }}</div></div>
-    {% endif %}
-  </header>
-
+<div class="post{% if page.banner %} with-home-banner{% endif %}">
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+    <div class="home-intro">
+      <header class="post-header">
+        <div class="about-heading">
+          <h1 class="post-title{% if page.arabic_name %} bilingual-name{% endif %}">
+            <span class="latin-name">
+              {% if site.title == 'blank' %}
+                <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+                {{ site.last_name }}
+              {% else %}
+                {{ site.title }}
+              {% endif %}
+            </span>
+            {% if page.arabic_name %}
+              <span class="name-divider" aria-hidden="true"></span>
+              <span class="arabic-name" lang="ar" dir="rtl">{{ page.arabic_name }}</span>
+            {% endif %}
+          </h1>
+          {% if page.social %}
+            <div class="social">
+              <div class="contact-icons">{% include social.liquid %}</div>
+            </div>
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {% assign profile_image_alt = page.profile.image_alt | default: page.profile.image %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile_image_alt
-            cache_bust=true
-          %}
+        </div>
+        <p class="desc">{{ page.subtitle }}</p>
+        {% if page.social and site.contact_note != blank %}
+          <div class="social"><div class="contact-note">{{ site.contact_note }}</div></div>
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+      </header>
 
-    <div class="clearfix about-content">{{ content }}</div>
+      {% if page.profile %}
+        <aside class="profile">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid' %}
+            {% endif %}
+            {% assign sizes = '(max-width: 767px) 72px, 136px' %}
+            {% assign profile_image_alt = page.profile.image_alt | default: page.profile.image %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile_image_alt
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info != blank %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </aside>
+      {% endif %}
+
+      <div class="about-content">{{ content }}</div>
+    </div>
 
     {% if page.selected_papers %}
       <h2>
@@ -66,10 +66,12 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="home-section" aria-labelledby="home-news-title">
+        <h2 id="home-news-title">
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->

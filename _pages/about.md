@@ -2,6 +2,9 @@
 layout: about
 title: about
 permalink: /
+banner:
+  image: home-banner.jpg
+  alt: A boat on calm water beneath an overcast sky
 subtitle: >
   <strong>Ph.D. student in statistics</strong> at
   <a href="https://crest.science/">CREST</a> -
@@ -30,11 +33,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<div class="home-biography" markdown="1">
+
 **Research:** I work at the intersection of probability, statistics, and geometry. I'm particularly interested in how the ambient geometry of a space affects statistical estimation and concentration phenomena. ([Google Scholar](https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}))
 
 **Background:** I am a Ph.D. student working with [Victor-Emmanuel Brunel](https://vebrunel.wordpress.com/) and [Austin J. Stromme](https://austinjstromme.github.io). Prior to that, I completed a master's degree in [probability and statistics](https://www.imo.universite-paris-saclay.fr/fr/etudiants/masters/mathematiques-et-applications/m2/mathematiques-de-laleatoire/) at [Institut des Mathématiques d'Orsay](https://www.imo.universite-paris-saclay.fr/fr/), Université Paris-Saclay, in parallel with my studies at ENSAE. During my master's thesis, I worked with [Damien Garreau](https://sites.google.com/view/damien-garreau/home) ([JMU Würzburg](https://www.uni-wuerzburg.de/)) and [Eddie Aamari](https://www.math.ens.psl.eu/~eaamari/) ([ENS Paris](https://www.math.ens.psl.eu/)) at [CAIDAS](https://www.caidas.uni-wuerzburg.de/) in Würzburg, Germany.
 
+</div>
+
+<aside class="home-details" aria-label="Seminar and contact details" markdown="1">
+
 **Seminar:** I am co-organizer of the [CREST Statistics PhD Seminar](https://crest-statistics-phd-seminar.github.io) at ENSAE.
 
-**Email:** yassine [dot] boukhateb [at] ensae [dot] fr  
+**Email:** yassine [dot] boukhateb [at] ensae [dot] fr
+
 **Address:** Office 3032, ENSAE/CREST, 5 Av. Henry Le Chatelier, 91120 Palaiseau
+
+</aside>
