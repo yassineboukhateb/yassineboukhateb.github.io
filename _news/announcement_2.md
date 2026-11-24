@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attending "Geometry in Data" Workshop
+title: Attended "Geometry in Data" Workshop
 date: 2025-06-16 16:11:00-0400
 inline: true
 related_posts: false
